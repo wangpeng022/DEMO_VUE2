@@ -12,14 +12,15 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       // proxy all requests starting with /api to jsonplaceholder
-      /*  '/api': {
-         target: 'http://jsonplaceholder.typicode.com',
-         changeOrigin: true,
-         pathRewrite: {
-           '^/api': ''
-         },
-       } */
+      '/api': {
+        target: 'http://localhost:3000',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api': ''
+        },
+      }
     },
+    //http://jsonplaceholder.typicode.com
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST

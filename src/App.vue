@@ -1,16 +1,27 @@
 <template>
     <div id="app">
-      APP
-        <router-view></router-view>
+      <home/>
     </div>
 </template>
 <script>
+import Home from "./components/home";
 export default {
   data() {
     return {};
-  }
+  },
+  components: { Home }
 };
 </script>
-<style scoped>
-
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
 </style>

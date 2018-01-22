@@ -1,0 +1,281 @@
+﻿html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, menu { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; }
+
+:focus { outline: 0; }
+ol, ul { list-style: none; }
+
+* { font-family: Arial,方正黑体简体,Microsoft YaHei,SimHei,SimSun; font-family: 'Microsoft YaHei'; outline: 0px solid white; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-user-select: none; }
+
+button { border-radius: 3px; }
+    button:hover { opacity: 1 !important; }
+
+.stacktime { display: block; font-size: 14px; font-family: Arial; color: #7c7b5b; line-height: 24px; padding-left: 8px; }
+.chartinfo { display: block; font-size: 14px; font-family: Arial; color: #333; padding-left: 8px; line-height: 24px; }
+    .chartinfo .stack_em { font-size: 12px; padding-right: 8px; }
+.chartline { height: 1px; border: 0; background-color: #d2d2d2; margin: 0; padding: 0; }
+
+
+/*#region 开关按钮 */
+.on-off_Btn { width: 46px; height: 24px; background: #e7ecf0; border: 1px solid #cacaca; border-radius: 50%; display: block; position: absolute; transition: all 200ms linear; }
+    .on-off_Btn:hover { background: #f8f8f8; }
+    .on-off_Btn .state { position: absolute; width: 50%; top: 0; bottom: 0; left: 0; background: #fff; border-radius: 50%; margin-left: -1px; }
+.switch-on { background: #adb0c0; border-color: #7b809a; }
+    .switch-on:hover { background: #c3c6d5; }
+    .switch-on .state { left: 50%; }
+/*#endregion */
+
+
+/*#region 文本框 */
+
+.lable_style { height: 24px; position: absolute; top: 0; left: 0; }
+
+/*#endregion */
+
+
+/*#region 冷冻泵 */
+
+.cp_b { width: 85px; height: 67px; position: absolute; background: url(../image/cp_b_close.png) no-repeat 0 0; background-size: 100%; }
+.cp_b_open { width: 85px; height: 67px; position: absolute; background: url(../image/cp_b_open.png) no-repeat 0 0; background-size: 100%; }
+.cp_b_error { width: 85px; height: 67px; position: absolute; background: url(../image/cp_b_error.png) no-repeat 0 0; background-size: 100%; }
+
+/*#endregion */
+
+/*#region 冷冻泵 */
+
+.cp_b1 { width: 85px; height: 67px; position: absolute; background: url(../image/cp_b1_close.png) no-repeat 0 0; background-size: 100%; }
+.cp_b1_open { width: 85px; height: 67px; position: absolute; background: url(../image/cp_b1_open.png) no-repeat 0 0; background-size: 100%; }
+.cp_b1_error { width: 85px; height: 67px; position: absolute; background: url(../image/cp_b1_error.png) no-repeat 0 0; background-size: 100%; }
+
+/*#endregion */
+
+/*#region 弯头 */
+
+.cp_bend2 { width: 21px; height: 22px; position: absolute; background: url(../image/cp_bend2.png) no-repeat 0 0; background-size: 100%; }
+.cp_bend3 { width: 27px; height: 23px; position: absolute; background: url(../image/cp_bend3.png) no-repeat 0 0; background-size: 100%; }
+.cp_bend4 { width: 29px; height: 28px; position: absolute; background: url(../image/cp_bend4.png) no-repeat 0 0; background-size: 100%; }
+
+/*#endregion */
+
+
+/*#region 分集水器 */
+
+.cp_fjsq_3 { width: 150px; height: 48px; position: absolute; background: url(../image/cp_fjsq_3_close.png) no-repeat 0 0; background-size: 100%; }
+.cp_fjsq_4 { width: 150px; height: 48px; position: absolute; background: url(../image/cp_fjsq_4_close.png) no-repeat 0 0; background-size: 100%; }
+.cp_fjsq_5 { width: 150px; height: 48px; position: absolute; background: url(../image/cp_fjsq_5_close.png) no-repeat 0 0; background-size: 100%; }
+.cp_fjsq_6 { width: 150px; height: 48px; position: absolute; background: url(../image/cp_fjsq_6_close.png) no-repeat 0 0; background-size: 100%; }
+.cp_fjsq_7 { width: 150px; height: 48px; position: absolute; background: url(../image/cp_fjsq_7_close.png) no-repeat 0 0; background-size: 100%; }
+.cp_fjsq_8 { width: 150px; height: 48px; position: absolute; background: url(../image/cp_fjsq_8_close.png) no-repeat 0 0; background-size: 100%; }
+.cp_fjsq_9 { width: 150px; height: 48px; position: absolute; background: url(../image/cp_fjsq_9_close.png) no-repeat 0 0; background-size: 100%; }
+.cp_fjsq_10 { width: 150px; height: 48px; position: absolute; background: url(../image/cp_fjsq_10_close.png) no-repeat 0 0; background-size: 100%; }
+
+.cp_fjsq_3_open { width: 150px; height: 48px; position: absolute; background: url(../image/cp_fjsq_3_open.png) no-repeat 0 0; background-size: 100%; }
+.cp_fjsq_4_open { width: 150px; height: 48px; position: absolute; background: url(../image/cp_fjsq_4_open.png) no-repeat 0 0; background-size: 100%; }
+.cp_fjsq_5_open { width: 150px; height: 48px; position: absolute; background: url(../image/cp_fjsq_5_open.png) no-repeat 0 0; background-size: 100%; }
+.cp_fjsq_6_open { width: 150px; height: 48px; position: absolute; background: url(../image/cp_fjsq_6_open.png) no-repeat 0 0; background-size: 100%; }
+.cp_fjsq_7_open { width: 150px; height: 48px; position: absolute; background: url(../image/cp_fjsq_7_open.png) no-repeat 0 0; background-size: 100%; }
+.cp_fjsq_8_open { width: 150px; height: 48px; position: absolute; background: url(../image/cp_fjsq_8_open.png) no-repeat 0 0; background-size: 100%; }
+.cp_fjsq_9_open { width: 150px; height: 48px; position: absolute; background: url(../image/cp_fjsq_9_open.png) no-repeat 0 0; background-size: 100%; }
+.cp_fjsq_10_open { width: 150px; height: 48px; position: absolute; background: url(../image/cp_fjsq_10_open.png) no-repeat 0 0; background-size: 100%; }
+
+.cp_fjsq_3_error { width: 150px; height: 48px; position: absolute; background: url(../image/cp_fjsq_3_error.png) no-repeat 0 0; background-size: 100%; }
+.cp_fjsq_4_error { width: 150px; height: 48px; position: absolute; background: url(../image/cp_fjsq_4_error.png) no-repeat 0 0; background-size: 100%; }
+.cp_fjsq_5_error { width: 150px; height: 48px; position: absolute; background: url(../image/cp_fjsq_5_error.png) no-repeat 0 0; background-size: 100%; }
+.cp_fjsq_6_error { width: 150px; height: 48px; position: absolute; background: url(../image/cp_fjsq_6_error.png) no-repeat 0 0; background-size: 100%; }
+.cp_fjsq_7_error { width: 150px; height: 48px; position: absolute; background: url(../image/cp_fjsq_7_error.png) no-repeat 0 0; background-size: 100%; }
+.cp_fjsq_8_error { width: 150px; height: 48px; position: absolute; background: url(../image/cp_fjsq_8_error.png) no-repeat 0 0; background-size: 100%; }
+.cp_fjsq_9_error { width: 150px; height: 48px; position: absolute; background: url(../image/cp_fjsq_9_error.png) no-repeat 0 0; background-size: 100%; }
+.cp_fjsq_10_error { width: 150px; height: 48px; position: absolute; background: url(../image/cp_fjsq_10_error.png) no-repeat 0 0; background-size: 100%; }
+
+/*#endregion */
+
+
+/*#region 冷机 */
+
+.cp_lj { height: 87px; width: 144px; position: absolute; background: url(../image/cp_lj_close.png) no-repeat 0px 0; background-size: 100%; }
+.cp_lj_open { height: 87px; width: 144px; position: absolute; background: url(../image/cp_lj_open.png) no-repeat 0px 0; background-size: 100%; }
+.cp_lj_error { height: 87px; width: 144px; position: absolute; background: url(../image/cp_lj_error.png) no-repeat 0px 0; background-size: 100%; }
+
+/*#endregion */
+
+/*#region 冷却塔 */
+
+.cp_lqt { width: 75px; height: 83px; position: absolute; background: url(../image/cp_lqt_close.png) no-repeat 0px 0px; background-size: 100%; }
+.cp_lqt_open { width: 75px; height: 83px; position: absolute; background: url(../image/cp_lqt_open.png) no-repeat 0px 0; background-size: 100%; }
+    .cp_lqt_open .cp_lqt_sy { width: 37.3333%; height: 33.7349%; visibility: visible; background: url(../image/cp_lqt_sy.gif) no-repeat; -webkit-transform: rotateX(75deg); background-size: cover; margin: -10.8433% 34.6666%; -webkit-transform-origin: center center; }
+.cp_lqt_error { width: 75px; height: 83px; position: absolute; background: url(../image/cp_lqt_error.png) no-repeat 0px 0; background-size: 100%; }
+
+/*#endregion */
+
+
+/*#region 表具 */
+
+/*压力表*/
+.cp_ylb { height: 40px; width: 40px; position: absolute; background: url(../image/cp_ylb.png) no-repeat center center; background-size: cover; }
+.cp_ylb_error { height: 40px; width: 40px; position: absolute; background: url(../image/cp_ylb_error.png) no-repeat center center; background-size: cover; }
+
+/*温度表*/
+.cp_wdb { height: 40px; width: 40px; position: absolute; background: url(../image/cp_wdb.png) no-repeat center center; background-size: cover; }
+.cp_wdb_error { height: 40px; width: 40px; position: absolute; background: url(../image/cp_wdb_error.png) no-repeat center center; background-size: cover; }
+
+/*冷机蒸发冷凝*/
+.cp_lj_zfln { height: 40px; width: 40px; position: absolute; background: url(../image/cp_lj_zfln.png) no-repeat center center; background-size: cover; }
+
+/*分集水器管路标识*/
+.cp_fjsq_gl { height: 40px; width: 40px; position: absolute; background: url(../image/cp_fjsq_gl.png) no-repeat center center; background-size: cover; }
+
+/*冷量表*/
+.cp_llb { height: 40px; width: 40px; position: absolute; background: url(../image/cp_llb.png) no-repeat center center; background-size: cover; }
+.cp_llb_error { height: 40px; width: 40px; position: absolute; background: url(../image/cp_llb_error.png) no-repeat center center; background-size: cover; }
+
+/*流量表*/
+.cp_liulb { height: 40px; width: 40px; position: absolute; background: url(../image/cp_liulb.png) no-repeat center center; background-size: cover; }
+.cp_liulb_error { height: 40px; width: 40px; position: absolute; background: url(../image/cp_liulb_error.png) no-repeat center center; background-size: cover; }
+
+
+/*阀门0*/
+.cp_fm0 { width: 44px; height: 42px; position: absolute; background: url(../image/cp_fm0_close.png) no-repeat 0 0; background-size: 100%; }
+.cp_fm0_open { width: 44px; height: 42px; position: absolute; background: url(../image/cp_fm0_open.png) no-repeat 0 0; background-size: 100%; }
+.cp_fm0_error { width: 44px; height: 42px; position: absolute; background: url(../image/cp_fm0_error.png) no-repeat 0 0; background-size: 100%; }
+
+/*阀门1 带开度*/
+.cp_fm1 { width: 58px; height: 42px; position: absolute; background: url(../image/cp_fm1_close.png) no-repeat 0 0; background-size: 100%; }
+.cp_fm1_open { width: 58px; height: 42px; position: absolute; background: url(../image/cp_fm1_open.png) no-repeat 0 0; background-size: 100%; }
+.cp_fm1_error { width: 58px; height: 42px; position: absolute; background: url(../image/cp_fm1_error.png) no-repeat 0 0; background-size: 100%; }
+
+/*阀门2 器件*/
+.cp_fm2 { width: 27px; height: 43px; position: absolute; background: url(../image/cp_fm2_close.png) no-repeat 0 0; background-size: 100%; }
+.cp_fm2_open { width: 27px; height: 43px; position: absolute; background: url(../image/cp_fm2_open.png) no-repeat 0px 0; background-size: 100%; }
+.cp_fm2_error { width: 27px; height: 43px; position: absolute; background: url(../image/cp_fm2_error.png) no-repeat 0 0; background-size: 100%; }
+
+/*#endregion */
+
+
+/*#region 管道 */
+
+/*横向管道*/
+.cp_pipe { width: 100px; height: 4px; position: absolute; background: #4c8ac3; overflow: hidden; opacity: 0.7; }
+    .cp_pipe .flow { height: 0px; width: 100%; border-bottom: 2px dashed #fff; margin-top: 1px; visibility: collapse; }
+
+/*从左到右*/
+.cp_pipe_left_right { width: 100px; height: 4px; position: absolute; background: #4c8ac3; overflow: hidden; }
+    .cp_pipe_left_right .flow { height: 0px; width: 100%; border-bottom: 2px dashed #fff; margin-top: 1px; -webkit-animation-name: pwWater_left; -webkit-animation-duration: 0.5s; -webkit-animation-iteration-count: infinite; visibility: visible; }
+
+/*从右到左*/
+.cp_pipe_right_left { width: 100px; height: 4px; position: absolute; background: #4c8ac3; overflow: hidden; }
+    .cp_pipe_right_left .flow { height: 0px; width: 100%; border-bottom: 2px dashed #fff; margin-top: 1px; -webkit-animation-name: pwWater_right; -webkit-animation-duration: 0.5s; -webkit-animation-iteration-count: infinite; visibility: visible; }
+
+@-webkit-keyframes pwWater_left {
+    0% { margin-left: 0px; }
+    100% { margin-left: 6px; }
+}
+
+@-webkit-keyframes pwWater_right {
+    0% { margin-left: 0px; }
+    100% { margin-left: -6px; }
+}
+
+/*#region 新管道 */
+
+/*横向管道*/
+/*从左到右*/
+.cp_pipe_thick_left_right_liang { width: 200px; height: 13px; position: absolute; background: url(../image/guandao.png) repeat; overflow: hidden; background-size: cover; }
+    /*-webkit-animation-name: pwWater_left;*/
+    .cp_pipe_thick_left_right_liang .flow { height: 100%; width: 200%; background: url(../image/jiantou_liang.gif) repeat; -webkit-animation-duration: 0.5s; -webkit-animation-iteration-count: infinite; visibility: visible; background-size: contain; }
+.cp_pipe_thick_left_right_wen { width: 200px; height: 13px; position: absolute; background: url(../image/guandao.png) repeat; overflow: hidden; background-size: cover; }
+    .cp_pipe_thick_left_right_wen .flow { height: 100%; width: 200%; background: url(../image/jiantou_wen.gif) repeat; -webkit-animation-duration: 0.5s; -webkit-animation-iteration-count: infinite; visibility: visible; background-size: contain; }
+.cp_pipe_thick_left_right_re { width: 200px; height: 13px; position: absolute; background: url(../image/guandao.png) repeat; overflow: hidden; background-size: cover; }
+    .cp_pipe_thick_left_right_re .flow { height: 100%; width: 200%; background: url(../image/jiantou_re.gif) repeat; -webkit-animation-duration: 0.5s; -webkit-animation-iteration-count: infinite; visibility: visible; background-size: contain; }
+.cp_pipe_thick_left_right_tang { width: 200px; height: 13px; position: absolute; background: url(../image/guandao.png) repeat; overflow: hidden; background-size: cover; }
+    .cp_pipe_thick_left_right_tang .flow { height: 100%; width: 200%; background: url(../image/jiantou_tang.gif) repeat; -webkit-animation-duration: 0.5s; -webkit-animation-iteration-count: infinite; visibility: visible; background-size: contain; }
+.pipe_left_to_right { transform: rotate(180deg); }
+
+@-webkit-keyframes pwWater_left {
+    0% { margin-left: -37px; }
+    100% { margin-left: 0px; }
+}
+
+
+/*#endregion */
+
+
+/*#endregion */
+
+
+/*#region 光伏 */
+
+/*配电柜*/
+.pv_pdc { position: absolute; width: 73px; height: 107px; background: url(../image/pv_pdc_all.png) no-repeat 0 0; background-size: cover; }
+
+/*变压器*/
+.pv_bt { position: absolute; width: 77px; height: 61px; background: url(../image/pv_bt_all.png) no-repeat 0 0; background-size: cover; }
+
+/*逆变器*/
+.pv_inverter { position: absolute; width: 65px; height: 92px; background: url(../image/pv_inverter_all.png) no-repeat 0 0; background-size: cover; }
+
+/*汇流箱*/
+.pv_junction_box { position: absolute; width: 67px; height: 37px; background: url(../image/pv_junction_box_all.png) no-repeat 0 0; background-size: cover; }
+
+/*蓄电池*/
+.pv_acc { position: absolute; width: 47px; height: 71px; background: url(../image/pv_acc_all.png) no-repeat 0 0; background-size: cover; }
+
+/*直流屏*/
+.pv_dcs { position: absolute; width: 66px; height: 78px; background: url(../image/pv_dcs_all.png) no-repeat 0 0; background-size: cover; }
+
+/*光伏组件*/
+.pv_module { position: absolute; width: 27px; height: 32px; background: url(../image/pv_module_all.png) no-repeat 0 0; background-size: cover; }
+
+/*报警0*/
+.alarm0 { position: absolute; width: 63px; height: 60px; background: url(../image/alarm0.png) no-repeat 0 0; background-size: cover; }
+
+/*报警1*/
+.alarm1 { position: absolute; width: 28px; height: 28px; background: url(../image/alarm1.png) no-repeat 0 0; background-size: cover; }
+
+
+/*#endregion */
+
+
+/*#region ListPanel 列表面板 */
+
+.list_panel { width: 200px; height: 200px; position: absolute; background-color: #f2f2f2; min-width: 130px; min-height: 16px; }
+    .list_panel .tle { height: 20px; top: 0; position: absolute; left: 0; right: 0; background-color: #999999; font-size: 12px; color: #fff; text-align: left; text-indent: 10px; line-height: 16px; font-family: Microsoft YaHei; }
+    .list_panel .cnt { position: absolute; top: 20px; bottom: 0; left: 0; right: 0; overflow-y: auto; }
+        .list_panel .cnt .cnt_item { height: 18px; line-height: 18px; width: 100%; font-size: 10px; color: #333; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; -webkit-text-size-adjust: none; text-align: left; text-indent: 16px; }
+
+/*#endregion */
+
+
+
+/*#region 冷站信号灯 */
+
+.cp_light_c { width: 28px; height: 28px; position: absolute; background: url(../image/cp_light_close.png) no-repeat; background-size: cover; }
+.cp_light_c_o { width: 28px; height: 28px; position: absolute; background: url(../image/cp_light_close_open.gif) no-repeat; background-size: cover; }
+.cp_light_o_c { width: 28px; height: 28px; position: absolute; background: url(../image/cp_light_open_close.gif) no-repeat; background-size: cover; }
+.cp_light_o { width: 28px; height: 28px; position: absolute; background: url(../image/cp_light_open.png) no-repeat; background-size: cover; }
+.cp_light_e { width: 28px; height: 28px; position: absolute; background: url(../image/cp_light_error.gif) no-repeat; background-size: cover; }
+
+/*#endregion */
+
+
+
+/*#region 滑动按钮 */
+
+.cp_sliding_btn { position: absolute; height: 30px; border: 1px solid #cacaca; box-sizing: border-box; border-radius: 3px;}
+    .cp_sliding_btn .cp_sli { width: 120px; height: 100%; float: left; border-right: 1px solid #ccc; line-height: 30px; cursor: pointer; text-align: center; }
+        .cp_sliding_btn .cp_sli:first-child { border-radius: 3px 0 0 3px; }
+        .cp_sliding_btn .cp_sli:last-child { border-right: 0px solid #cacaca; box-sizing: border-box; border-radius: 0 3px 3px 0; }
+    .cp_sliding_btn .cp_sli_sed { color: #fff; transition: all 200ms linear; cursor: default; pointer-events: none; background: #7a94ad; height: 100%; border-color: #7a94ad; }
+
+/*#endregion */
+
+
+
+/*#region 温度计 */
+
+.thermometer0 { width: 24px; height: 166px; background: #fff; position: absolute; }
+.thermometer0_b { height: 14px; width: 14px; position: absolute; bottom: 0px; border-radius: 12px; border: 5px solid #eceeed; background: #f07d62; }
+.thermometer0_t { width: 14px; position: absolute; left: 0; right: 0; bottom: 18px; top: 0; margin: 0 auto; border-top-left-radius: 7px; border-top-right-radius: 7px; background: #eceeed; }
+    .thermometer0_t .calibration { height: 60%; transition: 0.3s; position: absolute; left: 3px; right: 3px; bottom: 0; background: #f07d62; border-top-left-radius: 4px; border-top-right-radius: 4px; }
+        .thermometer0_t .calibration .tcp { position: absolute; top: -8px; font-size: 14px; color: #f07d62; left: 14px; display: block; width: 40px; }
+        .thermometer0_t .calibration .p1 { float: left; }
+        .thermometer0_t .calibration .p2 { font-size: 10px; float: left; line-height: 20px; }
+
+/*#endregion */

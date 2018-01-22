@@ -11,7 +11,7 @@ app.use(session({
 app.use(bodyParser.json());
 app.use(function (req, res, next) {
   //允许的来源
-  res.header('Access-Control-Allow-Origin', 'http://localhost:8080');
+  res.header('Access-Control-Allow-Origin', '*');
   //允许客户端请求的方法
   res.header('Access-Control-Allow-Methods', 'GET,POST,OPTIONS,PUT,DELETE');
   //允许客户端发送的请求头
@@ -28,7 +28,7 @@ app.use(function (req, res, next) {
 //获取首页 列表 && 轮播图
 let HList = require("./mock/list");
 
-app.get("/list", function (req, res) {
+app.get("/api/list", function (req, res) {
   res.json(HList);
 });
 
